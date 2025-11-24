@@ -55,7 +55,7 @@ export const ProductsPage = () => {
         </div>
       </div>
 
-      <SimpleGrid cols={{ base: 2, sm: 3, md: 4 }} spacing="lg">
+      <SimpleGrid cols={{ base: 1, xs: 2, sm: 2, md: 3 }} spacing="lg">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
