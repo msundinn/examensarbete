@@ -8,7 +8,6 @@ import { Link } from "react-router";
 
 const links = [
   { link: "/", label: "Konst" },
-  { link: "/about", label: "Om mig" },
   { link: "/contact", label: "Kontakt" },
 ];
 

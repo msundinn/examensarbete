@@ -11,6 +11,8 @@ import {
   Loader,
   Stack,
   Title,
+  AspectRatio,
+  Image,
 } from "@mantine/core";
 import { ProductCard } from "../../components/ProductCard";
 import { Carousel } from "@mantine/carousel";
@@ -58,24 +60,31 @@ export const ProductDetailPage = () => {
   return (
     <Container size="md" py="xl">
       <Grid gutter="xl" align="flex-start">
-        <Grid.Col span={{ base: 12, sm: 5 }}>
-          <img
-            src={product.imageURL}
-            alt={product.title}
-            style={{
-              width: "100%",
-              height: "auto",
-              borderRadius: "8px",
-              objectFit: "cover",
-            }}
-          />
+        <Grid.Col span={{ base: 12, xs: 5 }}>
+          <AspectRatio ratio={2 / 3}>
+            <Image
+              radius="md"
+              src={product.imageURL}
+              alt={product.title}
+              fit="cover"
+              style={{
+                border: "1px solid lightgrey",
+                boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+              }}
+            />
+          </AspectRatio>
         </Grid.Col>
 
-        <Grid.Col span={{ base: 12, sm: 7 }}>
+        <Grid.Col span={{ base: 12, xs: 7 }}>
           <Stack gap="md">
             <Title order={2}>{product.title}</Title>
 
-            <Text size="lg" fw={600} c="darkgreen">
+            <Text
+              size="lg"
+              fw={600}
+              c="darkgreen"
+              style={{ borderBottom: "1px solid grey", paddingBottom: "8px" }}
+            >
               {product.price} kr
             </Text>
 

@@ -55,6 +55,17 @@ export const ProductsPage = () => {
         </div>
       </div>
 
+      <Title
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          paddingBottom: "20px",
+          color: "rgb(64,64,64)",
+        }}
+      >
+        Utforska verk
+      </Title>
+
       <SimpleGrid cols={{ base: 1, xs: 2, sm: 2, md: 3 }} spacing="lg">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
