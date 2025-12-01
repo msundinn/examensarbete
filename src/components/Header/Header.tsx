@@ -33,6 +33,8 @@ export const Header = () => {
           </Group>
           <Indicator color="darkgreen" label={3} size={16}>
             <ActionIcon
+              component={Link}
+              to="/cart"
               color="darkgreen"
               variant="subtle"
               aria-label="Varukorg"
