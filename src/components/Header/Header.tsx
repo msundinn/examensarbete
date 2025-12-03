@@ -5,6 +5,8 @@ import { IconShoppingCart } from "@tabler/icons-react";
 import { Indicator } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { Link } from "react-router";
+import { useContext } from "react";
+import { CartContext } from "../../contexts/CartContext";
 
 const links = [
   { link: "/", label: "Konst" },
@@ -13,6 +15,13 @@ const links = [
 
 export const Header = () => {
   const [opened, { toggle }] = useDisclosure(false);
+
+  const { cart } = useContext(CartContext);
+
+  const totalQuantity = cart.items.reduce(
+    (sum, item) => sum + item.quantity,
+    0
+  );
 
   const items = links.map((link) => (
     <Link key={link.label} to={link.link} className={classes.link}>
@@ -31,7 +40,12 @@ export const Header = () => {
           <Group ml={50} gap={5} className={classes.links} visibleFrom="sm">
             {items}
           </Group>
-          <Indicator color="darkgreen" label={3} size={16}>
+          <Indicator
+            color="darkgreen"
+            label={totalQuantity}
+            size={16}
+            disabled={totalQuantity === 0}
+          >
             <ActionIcon
               component={Link}
               to="/cart"

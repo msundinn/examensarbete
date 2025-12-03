@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
 import type { Product } from "../../models/Product";
 import { getProduct, getProducts } from "../../service/productsApi";
@@ -16,12 +16,15 @@ import {
 } from "@mantine/core";
 import { ProductCard } from "../../components/ProductCard";
 import { Carousel } from "@mantine/carousel";
+import { CartContext } from "../../contexts/CartContext";
 
 export const ProductDetailPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState<Product | null>(null);
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
+
+  const { dispatch } = useContext(CartContext);
 
   useEffect(() => {
     if (!id) {
@@ -97,6 +100,10 @@ export const ProductDetailPage = () => {
               size="md"
               radius="md"
               style={{ width: "fit-content" }}
+              onClick={() => {
+                if (!product) return;
+                dispatch({ type: "ADD_ITEM", payload: product });
+              }}
             >
               Lägg i varukorgen
             </Button>
