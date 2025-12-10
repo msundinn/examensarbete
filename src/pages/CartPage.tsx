@@ -50,7 +50,6 @@ export const CartPage = () => {
           {items.map((item) => (
             <Card key={item.product.id} withBorder radius="md" padding="md">
               <Group justify="space-between" align="flex-start">
-                {/* klickbar del -> detaljsida */}
                 <Link
                   to={`/products/${item.product.id}`}
                   style={{ textDecoration: "none", color: "inherit" }}
@@ -78,7 +77,6 @@ export const CartPage = () => {
                   </Group>
                 </Link>
 
-                {/* knappar för antal + ta bort */}
                 <Stack gap="xs" align="flex-end">
                   <Group gap="xs">
                     <Button
@@ -134,7 +132,7 @@ export const CartPage = () => {
             Totalt: {totalPrice} kr
           </Text>
 
-          <Button color="darkgreen" size="md">
+          <Button component={Link} to="/checkout" color="darkgreen" size="md">
             Gå till betalning
           </Button>
         </Group>

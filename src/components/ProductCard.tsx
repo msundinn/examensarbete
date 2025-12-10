@@ -20,17 +20,19 @@ export const ProductCard = ({ product }: Props) => {
   const { dispatch } = useContext(CartContext);
 
   return (
-    <Link to={`/products/${product.id}`} style={{ textDecoration: "none" }}>
-      <Card
-        key={product.id}
-        shadow="sm"
-        radius="md"
-        withBorder
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          minHeight: 480,
-        }}
+    <Card
+      shadow="sm"
+      radius="md"
+      withBorder
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: 480,
+      }}
+    >
+      <Link
+        to={`/products/${product.id}`}
+        style={{ textDecoration: "none", color: "inherit" }}
       >
         <CardSection>
           <AspectRatio ratio={2 / 3}>
@@ -61,16 +63,17 @@ export const ProductCard = ({ product }: Props) => {
           <Text fw={700} mt="sm">
             {product.price} kr
           </Text>
-          <Button
-            fullWidth
-            mt="md"
-            variant="light"
-            onClick={() => dispatch({ type: "ADD_ITEM", payload: product })}
-          >
-            Lägg till i varukorg
-          </Button>
         </Group>
-      </Card>
-    </Link>
+      </Link>
+
+      <Button
+        fullWidth
+        mt="md"
+        variant="light"
+        onClick={() => dispatch({ type: "ADD_ITEM", payload: product })}
+      >
+        Lägg till i varukorg
+      </Button>
+    </Card>
   );
 };
