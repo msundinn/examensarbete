@@ -22,6 +22,7 @@ export const ProductDetailPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState<Product | null>(null);
   const [products, setProducts] = useState<Product[]>([]);
+  const [recommended, setRecommended] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
   const { dispatch } = useContext(CartContext);
@@ -38,6 +39,15 @@ export const ProductDetailPage = () => {
       ([productData, productsData]) => {
         setProduct(productData ?? null);
         setProducts(productsData ?? []);
+        if (productData && productsData) {
+          const otherProducts = productsData.filter(
+            (p) => p.id !== productData.id
+          );
+          const shuffled = [...otherProducts].sort(() => Math.random() - 0.5);
+          setRecommended(shuffled.slice(0, 6));
+        } else {
+          setRecommended([]);
+        }
         setLoading(false);
       }
     );
@@ -54,11 +64,6 @@ export const ProductDetailPage = () => {
   if (!product) {
     return <p>Produkten hittades inte.</p>;
   }
-
-  const otherProducts = products.filter((p) => p.id !== product.id);
-
-  const shuffled = [...otherProducts].sort(() => Math.random() - 0.5);
-  const recommended = shuffled.slice(0, 6);
 
   return (
     <Container size="md" py="xl">
@@ -105,7 +110,7 @@ export const ProductDetailPage = () => {
                 dispatch({ type: "ADD_ITEM", payload: product });
               }}
             >
-              Lägg i varukorgen
+              Köp print
             </Button>
           </Stack>
         </Grid.Col>

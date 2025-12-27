@@ -72,6 +72,7 @@ export const CheckoutPage = () => {
                         src={item.product.imageURL}
                         alt={item.product.title}
                         w={80}
+                        h={120}
                         radius="md"
                       />
                     )}

@@ -1,4 +1,3 @@
-// src/pages/CartPage.tsx
 import { useContext } from "react";
 import {
   Button,
@@ -49,22 +48,29 @@ export const CartPage = () => {
         <Stack gap="md">
           {items.map((item) => (
             <Card key={item.product.id} withBorder radius="md" padding="md">
-              <Group justify="space-between" align="flex-start">
+              <Group wrap="nowrap" align="stretch">
                 <Link
                   to={`/products/${item.product.id}`}
-                  style={{ textDecoration: "none", color: "inherit" }}
+                  style={{
+                    textDecoration: "none",
+                    color: "inherit",
+                    flex: 1,
+                    minWidth: 0,
+                  }}
                 >
-                  <Group align="flex-start">
+                  <Group align="flex-start" wrap="nowrap">
                     {item.product.imageURL && (
                       <Image
                         src={item.product.imageURL}
                         alt={item.product.title}
                         w={80}
+                        h={120}
+                        fit="cover"
                         radius="md"
                       />
                     )}
 
-                    <Stack gap={4}>
+                    <Stack gap={4} style={{ minWidth: 0 }}>
                       <Text fw={500}>{item.product.title}</Text>
                       <Text size="sm" c="dimmed">
                         {item.product.price} kr / st
@@ -77,7 +83,15 @@ export const CartPage = () => {
                   </Group>
                 </Link>
 
-                <Stack gap="xs" align="flex-end">
+                <Stack
+                  gap="xs"
+                  align="flex-end"
+                  style={{
+                    flexShrink: 0,
+                    height: "100%",
+                    alignItems: "center",
+                  }}
+                >
                   <Group gap="xs">
                     <Button
                       variant="outline"

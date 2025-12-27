@@ -58,12 +58,4 @@ export function Layout() {
       </div>
     </CartContext.Provider>
   );
-
-  return (
-    <CartContext.Provider value={{ cart, dispatch }}>
-      <Header />
-      <Outlet />
-      <Footer />
-    </CartContext.Provider>
-  );
 }

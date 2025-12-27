@@ -69,69 +69,75 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "7",
-    title: "Meadow Silence",
+    title: "Silent Waters",
     price: 150,
     imageURL:
-      "https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?w=700&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1582561424760-0321d75e81fa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHBhaW50aW5nfGVufDB8fDB8fHww",
 
-    shortDescription: "Dreamy peaceful meadow scene.",
+    shortDescription:
+      "A tranquil maritime scene with sails, mist, and quiet movement.",
     longDescription:
-      "A tranquil moment captured in soft colors and gentle brushstrokes — a girl sitting quietly among flowers. This poster creates a warm, nostalgic and calming atmosphere.",
+      "A serene maritime artwork where sailing ships glide across calm, reflective waters. Soft tones and an open horizon create a feeling of stillness, balance, and timeless calm. A perfect print for spaces where you want to invite peace and quiet—such as bedrooms, living rooms, or workspaces.",
   },
   {
     id: "8",
-    title: "Heavenly Chaos",
+    title: "Cathedral of Light",
     price: 150,
     imageURL:
-      "https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?w=700&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1578301978162-7aae4d755744?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fHBhaW50aW5nfGVufDB8fDB8fHww",
 
-    shortDescription: "Powerful baroque energy. ",
+    shortDescription:
+      "Monumental architecture filled with light, shadow, and human presence. ",
     longDescription:
-      "A dramatic and vibrant explosion of movement, figures and clouds inspired by classic baroque art. Perfect for anyone who loves expressive, bold and emotional artwork.",
+      "A powerful and atmospheric scene where light pours through towering arches, meeting quiet figures below. The contrast between scale and humanity creates a sense of reverence and contemplation. An expressive statement piece, ideal for larger rooms or minimalist interiors where art is meant to take center stage.",
   },
   {
     id: "9",
-    title: "Mountain Refuge",
+    title: "The Alchemist’s Study",
     price: 150,
     imageURL:
-      "https://images.unsplash.com/photo-1549289524-06cf8837ace5?w=700&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1576773689115-5cd2b0223523?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHBhaW50aW5nfGVufDB8fDB8fHww",
 
-    shortDescription: "Atmospheric mountain home.",
+    shortDescription:
+      "A vivid, story-rich scene filled with color, symbolism, and movement.",
     longDescription:
-      "A rich and emotional landscape of a small home hidden within a rugged mountain scene. This poster brings depth, warmth and a sense of adventure — perfect for reading nooks or creative spaces.",
+      "An expressive and detailed artwork that feels like a moment captured mid-story. Deep colors, symbolic elements, and dynamic composition invite imagination and interpretation. This print brings character and creative energy to a space—perfect for studios, libraries, or rooms that celebrate art and storytelling.",
   },
   {
     id: "10",
-    title: "Fairytale Castle",
+    title: "Artists at Work",
     price: 150,
     imageURL:
-      "https://images.unsplash.com/photo-1579541814924-49fef17c5be5?w=700&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1688902105043-baaa8b5c5e85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTF8fHBhaW50aW5nfGVufDB8fDB8fHww",
 
-    shortDescription: "Classic fairytale tower.",
+    shortDescription:
+      "A light-filled scene capturing creativity, focus, and shared artistic moments.",
     longDescription:
-      "A dreamy fairytale castle rising from misty cliffs. Soft colors and magical atmosphere make this poster ideal for bedrooms, kids’ rooms or anyone who loves fantasy aesthetics.",
+      "A vivid and intimate portrayal of artists immersed in their work, surrounded by light, color, and movement. The loose brushwork and outdoor setting create a sense of presence and spontaneity, as if the moment is unfolding before your eyes. A perfect print for studios, creative spaces, or any room that celebrates art and inspiration.",
   },
   {
     id: "11",
-    title: "Golden Fields",
+    title: "Bearer of Light",
     price: 150,
     imageURL:
-      "https://images.unsplash.com/photo-1579541513287-3f17a5d8d62c?w=700&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1579168730073-4541e40ca43a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjA4fHxwYWludGluZ3xlbnwwfHwwfHx8MA%3D%3D",
 
-    shortDescription: "Warm golden countryside.",
+    shortDescription:
+      "A contemplative figure illuminated by a quiet, inner glow.",
     longDescription:
-      "A serene rural landscape painted in gentle golden tones. Perfect for adding warmth and calm to modern minimalist homes, Scandinavian interiors or rustic cottages.",
+      "A deeply atmospheric artwork centered on solitude, reflection, and inner light. The contrast between darkness and the softly glowing object draws the viewer into a moment of stillness and thought. This piece brings depth and emotional weight to a space, making it ideal for quiet rooms, studies, or places meant for reflection.",
   },
   {
     id: "12",
-    title: "Wildlife Gathering",
+    title: "Autumn Passage",
     price: 150,
     imageURL:
-      "https://images.unsplash.com/photo-1584446922442-7ac6b8c118f3?w=700&auto=format&fit=crop&q=60",
+      "https://images.unsplash.com/photo-1632231484562-3d2bed7e808d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjcxfHxwYWludGluZ3xlbnwwfHwwfHx8MA%3D%3D",
 
-    shortDescription: "Charming surreal animal scene.",
+    shortDescription:
+      "A warm classical landscape bathed in golden evening light.",
     longDescription:
-      "A whimsical and humorous scene of birds and woodland animals gathered together. Rich in detail and personality, this artwork brings creativity and charm to any wall.",
+      "A timeless countryside scene where travelers move gently through a glowing autumn landscape. The rich, earthy tones and soft light evoke calm, nostalgia, and a sense of journey. This print adds warmth and balance to interiors and pairs beautifully with natural materials and traditional or modern décor..",
   },
 ];
 

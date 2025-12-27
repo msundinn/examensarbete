@@ -43,13 +43,11 @@ export const ProductsPage = () => {
         <Overlay color="#000" opacity={0.65} zIndex={1} />
 
         <div className={classes.inner}>
-          <Title className={classes.title}>bla bla bla</Title>
+          <Title className={classes.title}>Atelier Masha</Title>
 
           <Container size={640}>
             <Text size="lg" className={classes.description}>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid
-              sint reiciendis iure excepturi cum eveniet, ut temporibus numquam
-              nesciunt, dolorem odio quaerat possimus?
+              Prints tillgängliga online · Originalverk på förfrågan
             </Text>
           </Container>
         </div>

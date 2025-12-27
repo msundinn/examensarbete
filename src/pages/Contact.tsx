@@ -11,6 +11,7 @@ import {
   Group,
   Anchor,
   Alert,
+  Divider,
 } from "@mantine/core";
 import { IconCheck } from "@tabler/icons-react";
 
@@ -49,13 +50,24 @@ export const ContactPage = () => {
 
   return (
     <Container size="md" py="xl">
+      {" "}
+      <Stack gap={4} mb={"lg"}>
+        <Title mb={"md"}>Originalverk & beställningar</Title>
+        <Text c="dimmed">
+          Originalmålningar säljs på förfrågan och hanteras personligen. För att
+          säkerställa rätt information kring tillgänglighet, pris och leverans
+          ber jag dig att kontakta mig direkt. Ange gärna vilket verk du är
+          intresserad av, eller om det gäller en specifik storlek eller
+          beställning, så återkommer jag med mer information.
+        </Text>
+      </Stack>
+      <Divider my="lg" />
       <Grid gutter="xl" align="flex-start">
         <Grid.Col span={{ base: 12, md: 5 }}>
           <Stack gap="md">
             <Title order={2}>Kontakta mig</Title>
 
             <Text c="dimmed">
-              Har du frågor om ett verk, en beställning eller ett samarbete?
               Fyll i formuläret eller mejla mig direkt – jag svarar så snart jag
               kan.
             </Text>
