@@ -15,7 +15,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "2",
     title: "Mythic Battle",
-    price: 150,
+    price: 250,
     imageURL:
       "https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?w=700&auto=format&fit=crop&q=60",
 
@@ -26,7 +26,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "3",
     title: "Hidden Valley",
-    price: 150,
+    price: 250,
     imageURL:
       "https://images.unsplash.com/photo-1549289524-06cf8837ace5?w=700&auto=format&fit=crop&q=60",
 
@@ -48,7 +48,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "5",
     title: "Old Country Road",
-    price: 150,
+    price: 250,
     imageURL:
       "https://images.unsplash.com/photo-1579541513287-3f17a5d8d62c?w=700&auto=format&fit=crop&q=60",
 
@@ -82,7 +82,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "8",
     title: "Cathedral of Light",
-    price: 150,
+    price: 300,
     imageURL:
       "https://images.unsplash.com/photo-1578301978162-7aae4d755744?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fHBhaW50aW5nfGVufDB8fDB8fHww",
 
@@ -118,7 +118,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "11",
     title: "Bearer of Light",
-    price: 150,
+    price: 350,
     imageURL:
       "https://images.unsplash.com/photo-1579168730073-4541e40ca43a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjA4fHxwYWludGluZ3xlbnwwfHwwfHx8MA%3D%3D",
 

@@ -27,6 +27,7 @@ export const ProductCard = ({ product }: Props) => {
       style={{
         display: "flex",
         flexDirection: "column",
+        height: "100%",
       }}
     >
       <Link
@@ -49,12 +50,11 @@ export const ProductCard = ({ product }: Props) => {
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
-            marginTop: "auto",
             width: "100%",
             marginBottom: "20px",
           }}
         >
-          <Text fw={600} mt="sm">
+          <Text fw={600} mt="sm" lineClamp={1}>
             {product.title}
           </Text>
           <Text size="sm" c="dimmed" lineClamp={2}>

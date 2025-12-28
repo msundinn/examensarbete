@@ -52,7 +52,7 @@ export const CheckoutPage = () => {
       <Stack gap="lg">
         <Stack gap="xs">
           <Title order={3} size="h4">
-            Beställda varor:
+            Beställda verk:
           </Title>
           <Divider my="sm" />
 
