@@ -96,7 +96,7 @@ export const ProductDetailPage = () => {
               {product.price} kr
             </Text>
 
-            <Text size="md" c="dimmed">
+            <Text size="md" c="gray.7">
               {product.longDescription}
             </Text>
 
@@ -128,6 +128,8 @@ export const ProductDetailPage = () => {
             slideSize={{ base: "100%", "300px": "50%", "500px": "33.333333%" }}
             slideGap={{ base: 0, "300px": "md", "500px": "lg" }}
             emblaOptions={{ loop: true, align: "start" }}
+            previousControlProps={{ "aria-label": "Föregående verk" }}
+            nextControlProps={{ "aria-label": "Nästa verk" }}
           >
             {recommended.map((p) => (
               <Carousel.Slide key={p.id}>

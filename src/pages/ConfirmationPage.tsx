@@ -12,7 +12,7 @@ export const ConfirmationPage = () => {
           bekräftelse via e-post inom kort.
         </Text>
 
-        <Text size="sm" c="dimmed">
+        <Text size="sm" c="gray.7">
           Har du frågor kring din beställning är du välkommen att kontakta mig.
         </Text>
 

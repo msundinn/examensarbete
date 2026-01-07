@@ -13,10 +13,29 @@ export const Footer = () => {
           justify="flex-end"
           wrap="nowrap"
         >
-          <ActionIcon size="lg" color="gray" variant="subtle">
+          <ActionIcon
+            component="a"
+            href="https://github.com/DITT-NAMN"
+            target="_blank"
+            rel="noreferrer"
+            size="lg"
+            color="gray"
+            variant="subtle"
+            aria-label="Besök Atelier Mashas GitHub"
+          >
             <IconBrandGithub size={18} stroke={1.5} />
           </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
+
+          <ActionIcon
+            component="a"
+            href="https://www.instagram.com/atelier.masha"
+            target="_blank"
+            rel="noreferrer"
+            size="lg"
+            color="gray"
+            variant="subtle"
+            aria-label="Besök Atelier Masha på Instagram"
+          >
             <IconBrandInstagram size={18} stroke={1.5} />
           </ActionIcon>
         </Group>

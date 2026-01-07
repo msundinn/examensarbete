@@ -57,7 +57,7 @@ export const ProductCard = ({ product }: Props) => {
           <Text fw={600} mt="sm" lineClamp={1}>
             {product.title}
           </Text>
-          <Text size="sm" c="dimmed" lineClamp={2}>
+          <Text size="sm" c="gray.7" lineClamp={2}>
             {product.shortDescription}
           </Text>
           <Text fw={700} mt="sm">
@@ -69,10 +69,11 @@ export const ProductCard = ({ product }: Props) => {
       <Button
         fullWidth
         mt="auto"
-        variant="light"
+        color="darkgreen"
+        variant="filled"
         onClick={() => dispatch({ type: "ADD_ITEM", payload: product })}
       >
-        Köp print{" "}
+        Köp print
       </Button>
     </Card>
   );

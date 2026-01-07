@@ -53,7 +53,7 @@ export const ContactPage = () => {
       {" "}
       <Stack gap={4} mb={"lg"}>
         <Title mb={"md"}>Originalverk & beställningar</Title>
-        <Text c="dimmed">
+        <Text c="gray.7">
           Originalmålningar säljs på förfrågan och hanteras personligen. För att
           säkerställa rätt information kring tillgänglighet, pris och leverans
           ber jag dig att kontakta mig direkt. Ange gärna vilket verk du är
@@ -67,7 +67,7 @@ export const ContactPage = () => {
           <Stack gap="md">
             <Title order={2}>Kontakta mig</Title>
 
-            <Text c="dimmed">
+            <Text c="gray.7">
               Fyll i formuläret eller mejla mig direkt – jag svarar så snart jag
               kan.
             </Text>
@@ -93,7 +93,7 @@ export const ContactPage = () => {
 
             <Stack gap={4}>
               <Text fw={500}>Svarstid</Text>
-              <Text c="dimmed">Jag försöker svara inom 24–48 timmar.</Text>
+              <Text c="gray.7">Jag försöker svara inom 24–48 timmar.</Text>
             </Stack>
 
             {submitted && (

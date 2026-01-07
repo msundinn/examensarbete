@@ -79,7 +79,7 @@ export const CheckoutPage = () => {
 
                     <Stack gap={4}>
                       <Text fw={500}>{item.product.title}</Text>
-                      <Text size="sm" c="dimmed">
+                      <Text size="sm" c="gray.7">
                         {item.product.price} kr / st
                       </Text>
                       <Text size="sm">

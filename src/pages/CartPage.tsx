@@ -72,7 +72,7 @@ export const CartPage = () => {
 
                     <Stack gap={4} style={{ minWidth: 0 }}>
                       <Text fw={500}>{item.product.title}</Text>
-                      <Text size="sm" c="dimmed">
+                      <Text size="sm" c="gray.7">
                         {item.product.price} kr / st
                       </Text>
                       <Text size="sm">
@@ -96,6 +96,7 @@ export const CartPage = () => {
                     <Button
                       variant="outline"
                       size="xs"
+                      aria-label="Minska antal"
                       onClick={() =>
                         dispatch({
                           type: "DECREASE_QUANTITY",
@@ -109,6 +110,7 @@ export const CartPage = () => {
                     <Button
                       variant="outline"
                       size="xs"
+                      aria-label="Öka antal"
                       onClick={() =>
                         dispatch({
                           type: "INCREASE_QUANTITY",
